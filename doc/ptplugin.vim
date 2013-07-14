@@ -5,6 +5,7 @@ CONTENTS                                                    *ptplugin-contents*
 
     1. Intro........................................|ptplugin-intro|
     2. Options......................................|ptplugin-options|
+    3. Advanced usage...............................|ptplugin-advanced|
 
 ===============================================================================
 INTRO                                                          *ptplugin-intro*
