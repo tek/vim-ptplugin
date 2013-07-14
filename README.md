@@ -9,6 +9,9 @@ call ptplugin#bootstrap()
 if exists('g:project_ruby')
   Bundle 'tpope/vim-fugitive'
 endif
+if exists('g:project_detected')
+  Bundle 'majutsushi/tagbar'
+endif
 ```
 The results of these settings:
 
@@ -26,6 +29,9 @@ in `&runtimepath`.
 `cd /projects/ruby/lasers; vim`
 
 This will set `g:project_ruby`, thus enabling fugitive for this session.
+
+The variable `g:project_detected` is set if some kind of project
+has been matched. In this case, only load tagbar when in a project.
 
 For customisation information, read the
 [documentation](https://github.com/tek/vim-ptplugin/blob/master/doc/ptplugin.vim).
