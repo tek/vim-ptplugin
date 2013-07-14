@@ -15,10 +15,12 @@ The results of these settings:
 `cd /projects/fortran/monolith; vim`
 
 Now `ptplugin` will have sourced the files:
+
 * `project/fortran.vim`
 * `project/fortran/monolith.vim`
 * `project_after/fortran.vim`
 * `project_after/fortran/monolith.vim`
+
 in `&runtimepath`.
 
 `cd /projects/ruby/lasers; vim`
