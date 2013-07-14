@@ -26,4 +26,4 @@ in `&runtimepath`.
 This will set `g:project_ruby`, thus enabling fugitive for this session.
 
 For customisation information, read the
-[documentation]{https://github.com/tek/vim-ptplugin/blob/master/doc/ptplugin.vim}.
+[documentation](https://github.com/tek/vim-ptplugin/blob/master/doc/ptplugin.vim).
