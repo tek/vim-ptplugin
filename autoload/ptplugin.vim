@@ -26,15 +26,16 @@ function! ptplugin#bootstrap() "{{{
 
   if !exists('g:project_bootstrapped')
     let _match = matchlist(getcwd(), g:project_dir_regex)
+    let matches = filter(_match[1:], 'len(v:val)')
     let g:project_type = ''
     let g:project_types = []
-    if len(_match) >= 3
+    if len(matches) == 2
       let g:project_detected = 1
-      let [g:project_type, g:project_name] = _match[1:2]
+      let [g:project_type, g:project_name] = matches[:1]
       let g:project_types = get(g:project_type_map, g:project_type, [g:project_type]) +
             \ get(g:project_name_map, g:project_type.'_'.g:project_name, [])
       for type in g:project_types
-        let g:project_{type} = 1
+        exe 'let g:project_'.type.' = 1'
       endfor
     endif
     let g:project_bootstrapped = 1
