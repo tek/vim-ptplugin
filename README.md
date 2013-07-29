@@ -24,7 +24,7 @@ Now `ptplugin` will have sourced the files:
 * `project_after/fortran.vim`
 * `project_after/fortran/monolith.vim`
 
-in `&runtimepath`.
+in `&runtimepath` as soon as its own `{,after/}plugin` files are sourced.
 
 `cd /projects/ruby/lasers; vim`
 
