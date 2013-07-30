@@ -33,5 +33,12 @@ This will set `g:project_ruby`, thus enabling fugitive for this session.
 The variable `g:project_detected` is set if some kind of project
 has been matched. In this case, only load tagbar when in a project.
 
-For customisation information, read the
-[documentation](https://github.com/tek/vim-ptplugin/blob/master/doc/ptplugin.vim).
+For customisation information, read the [documentation][1].
+
+## License
+
+Copyright (c) Torsten Schmits. Distributed under the terms of the [MIT
+License][2].
+
+[1]: https://github.com/tek/vim-ptplugin/blob/master/doc/ptplugin.vim 'doc'
+[2]: http://opensource.org/licenses/MIT 'mit license'
