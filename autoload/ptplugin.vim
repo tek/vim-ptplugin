@@ -58,8 +58,8 @@ endfunction "}}}
 function! s:runtime(dir) "{{{
   if len(g:project_type)
     for _type in g:project_types
-      execute 'runtime '.a:dir.'/'._type.'.vim'
+      execute 'runtime! '.a:dir.'/'._type.'.vim'
     endfor
-    execute 'runtime '.join([a:dir, g:project_type, g:project_name.'.vim'], '/')
+    execute 'runtime! '.join([a:dir, g:project_type, g:project_name.'.vim'], '/')
   endif
 endfunction "}}}
