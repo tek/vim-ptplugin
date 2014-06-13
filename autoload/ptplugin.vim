@@ -1,14 +1,14 @@
 function! ptplugin#bootstrap() "{{{
 
   if !exists('g:project_base_dir')
-    let g:project_base_dir = expand(join(['~', 'code'], '/'))
+    let g:project_base_dir = expand('~')
   endif
 
-  let s:subdir_re = '/\([^/]\+\)'
+  let subdir_re = '/\([^/]\+\)'
   if !exists('g:project_dir_regex')
     let g:project_dir_regex = '\%('.g:project_base_dir.
-          \ s:subdir_re.s:subdir_re.'\|'.
-          \ expand('~').'/.\(vim\)/bundle'.s:subdir_re.
+          \ subdir_re.subdir_re.'\|'.
+          \ expand('~').'/.\(vim\)/bundle'.subdir_re.
           \ '\)'
   endif
 
