@@ -29,6 +29,7 @@ function! ptplugin#bootstrap() "{{{
     let matches = filter(_match[1:], 'len(v:val)')
     let g:project_type = ''
     let g:project_types = []
+    let g:project_detected = 0
     if len(matches) == 2
       let g:project_detected = 1
       let [g:project_type, g:project_name] = matches[:1]
