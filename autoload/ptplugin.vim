@@ -35,8 +35,8 @@ function! ptplugin#bootstrap() "{{{
       let [g:project_type, g:project_name] = matches[:1]
       let g:project_types = get(g:project_type_map, g:project_type, [g:project_type]) +
             \ get(g:project_name_map, g:project_type.'_'.g:project_name, [])
-      for type in g:project_types
-        exe 'let g:project_'.type.' = 1'
+      for _type in g:project_types
+        exe 'let g:project_'.substitute(_type, '\.', '_', '').' = 1'
       endfor
     endif
     let g:project_bootstrapped = 1
