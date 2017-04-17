@@ -1,3 +1,7 @@
+# Deprecation Notice
+This plugin is nonfunctional and will not be developed further.
+If you're using *neovim*, I created a much more sophisticated successor, [proteome].
+
 ## Quick example
 
 Your .vimrc, as a vundle user:
@@ -42,3 +46,4 @@ License][2].
 
 [1]: https://github.com/tek/vim-ptplugin/blob/master/doc/ptplugin.vim 'doc'
 [2]: http://opensource.org/licenses/MIT 'mit license'
+[proteome]: https://github.com/tek/proteome 'proteome'
