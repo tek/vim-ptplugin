@@ -45,7 +45,7 @@ endfunction "}}}
 
 function! ptplugin#init() "{{{
   call ptplugin#bootstrap()
-  call ptplugin#runtime()
+  " call ptplugin#runtime()
 endfunction "}}}
 
 function! ptplugin#runtime() "{{{
